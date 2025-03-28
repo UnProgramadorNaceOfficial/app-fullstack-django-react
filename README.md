@@ -16,7 +16,7 @@ Antes de comenzar, asegúrate de tener instalado:
 
 ```bash
 git clone https://github.com/usuario/proyecto-django.git
-cd reservas_inteligentes
+cd tendenciastda2025
 ```
 
 ### 2️⃣ Activar el Entorno Virtual
@@ -135,7 +135,7 @@ POST http://localhost:8000/login/
 Una vez que obtengas el token de autenticación, puedes probar un **endpoint protegido** enviando el token en el encabezado de la solicitud:
 
 ```http
-GET http://localhost:8000/profile/
+POST http://localhost:8000/profile/
 
 # Headers
 Authorization: Token <tu_token>
