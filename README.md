@@ -16,7 +16,7 @@ Antes de comenzar, asegúrate de tener instalado:
 
 ```bash
 git clone https://github.com/ElizabethEscobar04/tendenciastda2025
-cd reservas_inteligentes
+cd tendenciastda2025_entrega
 ```
 
 ### 2️⃣ Activar el Entorno Virtual
