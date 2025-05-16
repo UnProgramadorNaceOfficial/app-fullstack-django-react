@@ -10,7 +10,7 @@ class ReservaSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Reserva
-        fields = ['id', 'fecha', 'descripcion', 'valor', 'cliente', 'establecimiento']
+        fields = ['id', 'fecha', 'descripcion', 'valor', 'email', 'cliente', 'establecimiento']
 
     def validate(self, data):
         fecha = data['fecha']
