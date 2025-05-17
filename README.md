@@ -15,8 +15,8 @@ Antes de comenzar, asegúrate de tener instalado:
 ### 1️⃣ Clonar el Repositorio
 
 ```bash
-git clone https://github.com/usuario/proyecto-django.git
-cd tendenciastda2025
+git clone https://github.com/ElizabethEscobar04/tendenciastda2025
+cd tendenciastda2025_entrega
 ```
 
 ### 2️⃣ Activar el Entorno Virtual
@@ -42,7 +42,6 @@ pip install -r requirements.txt
 ```bash
 python manage.py makemigrations
 python manage.py migrate
-python manage.py loaddata datos_iniciales.json
 ```
 
 ### 5️⃣ Crear un Superusuario (Opcional)
@@ -89,6 +88,11 @@ El proyecto está organizado de la siguiente manera:
 proyecto-django/
 │── venv/              # Entorno virtual
 │── manage.py          # Comando de administración
+│── cliente/           # Aplicación de gestion de clientes
+│── establecimiento/   # Aplicación de gestion de establecimientos
+│── reserva/           # Aplicación de gestion de reservas
+│── global_project/    # Configuración del proyecto
+│── usuario/           # Aplicacion de gestion de usuarios
 │── cliente/           # Aplicación de clientes
 │── establecimiento/   # Aplicación de establecimientos
 │── reserva/           # Aplicación de reservas
