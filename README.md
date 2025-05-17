@@ -1,4 +1,4 @@
-# 🚀 Levantando el Proyecto Django
+1# 🚀 Levantando el Proyecto Django
 
 ¡Bienvenido! 🎉 En este tutorial, aprenderás a configurar y ejecutar nuestro proyecto Django desde cero. 🐍✨
 
@@ -16,7 +16,7 @@ Antes de comenzar, asegúrate de tener instalado:
 
 ```bash
 git clone https://github.com/ElizabethEscobar04/tendenciastda2025
-cd tendenciastda2025_entrega
+cd reservas_inteligentes
 ```
 
 ### 2️⃣ Activar el Entorno Virtual
@@ -93,70 +93,6 @@ proyecto-django/
 │── reserva/           # Aplicación de gestion de reservas
 │── global_project/    # Configuración del proyecto
 │── usuario/           # Aplicacion de gestion de usuarios
-│── cliente/           # Aplicación de clientes
-│── establecimiento/   # Aplicación de establecimientos
-│── reserva/           # Aplicación de reservas
-│── global_project/    # Configuración del proyecto
-│   │── settings.py    # Configuración general
-│   │── serializers.py # Serializadores
-│   │── views.py       # Vistas de usuarios
-│   │── urls.py        # Enrutamiento
-│   │── wsgi.py        # Servidor WSGI
-│   └── asgi.py        # Servidor ASGI (opcional)
-```
-
----
-
-## 🔐 Autenticación con Tokens
-
-El proyecto utiliza `rest_framework.authtoken` para la autenticación mediante tokens.  
-Hemos creado dos usuarios de prueba que puedes utilizar:
-
-```json
-{
-    "username": "usuario1",
-    "password": "usuario1Pass"
-}
-```
-
-```json
-{
-    "username": "usuario2",
-    "password": "usuario2Pass"
-}
-```
-
-### 🔑 Obtener un Token de Autenticación
-
-Para iniciar sesión, envía una petición `POST` a la siguiente URL con las credenciales de usuario en el **body**:
-
-```http
-POST http://localhost:8000/login/
-```
-
-### 🔎 Acceder a un Endpoint Protegido
-
-Una vez que obtengas el token de autenticación, puedes probar un **endpoint protegido** enviando el token en el encabezado de la solicitud:
-
-```http
-POST http://localhost:8000/profile/
-
-# Headers
-Authorization: Token <tu_token>
-```
-
-
-## 📝 Registrar tu propio usuario
-Puedes registrar tu propio usuario enviando una peticion `POST` a la siguiente url con los datos de tu usuario dentro del **body**.
-```http
-POST http://localhost:8000/register/
-
-# BODY
-{
-    "username": [Tu_usuario],
-    "password": [Tu_password],
-    "email": [Tu_email]
-}
 ```
 ---
 🚀 ¡Feliz programación con Django! 🦄🔥

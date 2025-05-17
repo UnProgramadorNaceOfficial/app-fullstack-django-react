@@ -10,7 +10,7 @@ class ReservaSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Reserva
-        fields = ['id', 'fecha', 'descripcion', 'valor', 'email', 'cliente', 'establecimiento']
+        fields = ['id', 'fecha', 'descripcion', 'valor', 'cliente', 'establecimiento']
 
     def validate(self, data):
         fecha = data['fecha']
@@ -36,14 +36,3 @@ class ReservaSerializer(serializers.ModelSerializer):
                 })
 
         return data
-
-from cliente.serializer import ClienteSerializer
-from establecimiento.serializer import EstablecimientoSerializer
-
-class ReservaSerializer(serializers.ModelSerializer):
-    cliente = ClienteSerializer(read_only=True)
-    establecimiento = EstablecimientoSerializer(read_only=True)
-
-    class Meta:
-        model = Reserva
-        fields = ['id', 'fecha', 'descripcion', 'valor', 'cliente', 'establecimiento']

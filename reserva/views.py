@@ -85,6 +85,3 @@ class ReservaViewSet(viewsets.ModelViewSet):
         response['Content-Disposition'] = 'attachment; filename="reporte_reservas.json"'
         return response
 
-class ReservaViewSet(viewsets.ModelViewSet):
-    queryset = Reserva.objects.all()
-    serializer_class = ReservaSerializer
