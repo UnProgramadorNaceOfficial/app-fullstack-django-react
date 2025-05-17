@@ -7,4 +7,5 @@ routers.register(r'cliente', views.ClienteViewSet, 'cliente')
 
 urlpatterns = [
     path("api/v1/", include(routers.urls)),
+    path("api/v1/", include(routers.urls))
 ]

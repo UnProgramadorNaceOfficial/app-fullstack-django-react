@@ -8,3 +8,4 @@ class ClienteViewSet(viewsets.ModelViewSet):
     serializer_class = ClienteSerializer
     queryset = Cliente.objects.all()
     permission_classes = [IsAuthenticate]
+    queryset = Cliente.objects.all()

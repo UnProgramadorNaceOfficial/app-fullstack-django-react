@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-
     'rest_framework',
     'rest_framework.authtoken',
     'rest_framework_simplejwt',
@@ -52,6 +51,12 @@ INSTALLED_APPS = [
     'cliente',
     'reserva',
     'usuario'
+    'rest_framework',
+    'rest_framework.authtoken',
+
+    'establecimiento',
+    'cliente',
+    'reserva'
 ]
 
 MIDDLEWARE = [

@@ -8,3 +8,4 @@ class EstablecimientoViewSet(viewsets.ModelViewSet):
     queryset = Establecimiento.objects.all()
     serializer_class = EstablecimientoSerializer
     permission_classes = [IsAuthenticate]
+    serializer_class = EstablecimientoSerializer
