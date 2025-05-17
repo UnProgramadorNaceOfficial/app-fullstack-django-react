@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+
     'rest_framework',
     'rest_framework.authtoken',
     'rest_framework_simplejwt',
@@ -51,12 +52,6 @@ INSTALLED_APPS = [
     'cliente',
     'reserva',
     'usuario'
-    'rest_framework',
-    'rest_framework.authtoken',
-
-    'establecimiento',
-    'cliente',
-    'reserva'
 ]
 
 MIDDLEWARE = [
@@ -154,10 +149,3 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'django.apesta@gmail.com'
-EMAIL_HOST_PASSWORD = 'vhpijardwjkqfcgd'
