@@ -75,12 +75,6 @@ python manage.py runserver
 ```
 
 
-### 6️⃣ Ejecutar el Servidor 🚀
-
-```bash
-python manage.py runserver
-```
-
 Ahora, abre tu navegador y visita:
 
 ```
