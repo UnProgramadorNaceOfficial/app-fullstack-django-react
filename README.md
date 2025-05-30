@@ -1,27 +1,43 @@
-1# 🚀 Levantando el Proyecto Django
+# 🧩 Sistema de Gestión de Reservas
 
-¡Bienvenido! 🎉 En este tutorial, aprenderás a configurar y ejecutar nuestro proyecto Django desde cero. 🐍✨
+Bienvenido al proyecto de **Gestión de Reservas**. Esta aplicación está dividida en dos partes:
 
-## 📌 Requisitos Previos
+# 📦 **Backend**: construido con Django y Django REST Framework.
+- 💻 **Frontend**: construido con Next.js.
+
+---
+
+## 📁 Estructura del proyecto
+
+root/
+│
+├── back-end-app/ # API REST con Django
+│ └── venv/ # Entorno virtual de Python
+│
+└── front-end-app/ # Aplicación web con Next.js
+
+
+---
+
+## ⚙️ Requisitos previos
 
 Antes de comenzar, asegúrate de tener instalado:
 
-- **Python** (versión 3.8 o superior) 🐍  
-- **Pip** (gestor de paquetes de Python) 📦  
-- **Virtualenv** (ya incluido en el proyecto) 🏕️  
+- [Python 3.10+](https://www.python.org/downloads/)
+- [Node.js 18+](https://nodejs.org/)
+- [PostgreSQL](https://www.postgresql.org/) (o la base de datos configurada en tu proyecto)
+- [Git](https://git-scm.com/)
+- [pip](https://pip.pypa.io/) y [venv](https://docs.python.org/3/library/venv.html) para entornos virtuales
 
-## 🛠️ Instalación y Configuración
+---
 
-### 1️⃣ Clonar el Repositorio
+## 🚀 Levantar el proyecto localmente
 
-```bash
-git clone https://github.com/ElizabethEscobar04/tendenciastda2025
-cd reservas_inteligentes
-```
+### 1️⃣ Backend – Django
 
 ### 2️⃣ Activar el Entorno Virtual
 
-El entorno virtual (`venv`) ya está incluido en el proyecto, por lo que solo debes activarlo:
+1. Abre tu terminal y navega a la carpeta del backend:
 
 ```bash
 # macOS/Linux
@@ -58,41 +74,63 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
+
+### 6️⃣ Ejecutar el Servidor 🚀
+
+```bash
+python manage.py runserver
+```
+
 Ahora, abre tu navegador y visita:
 
 ```
 http://127.0.0.1:8000/
 ```
 
-🎉 ¡Tu aplicación Django está corriendo! 🎈
+🎉 ¡Tu aplicación Backend Django está corriendo! 🎈
 
 ---
 
-## 📡 Endpoints de la API
+# 💻 Aplicación Frontend – Gestión de Reservas
 
-Aquí están los principales endpoints de la API:
+Bienvenido al proyecto de **Gestión de Reservas** – **Frontend**.  
+Esta es una aplicación construida con **Next.js**, encargada de consumir y mostrar los datos del API REST creado con Django.
 
-| Módulo         | Endpoint                                          |
-|---------------|--------------------------------------------------|
-| **Clientes**  | `http://localhost:8000/cliente/api/v1/cliente`   |
-| **Reservas**  | `http://localhost:8000/reserva/api/v1/reserva`   |
-| **Establecimientos** | `http://localhost:8000/establecimiento/api/v1/establecimiento` |
+
+## ⚙️ Requisitos previos
+
+Antes de comenzar, asegúrate de tener instalado:
+
+- [Node.js 18+](https://nodejs.org/)
+- [npm](https://www.npmjs.com/) o [Yarn](https://yarnpkg.com/)
+- [Git](https://git-scm.com/)
+- Tener levantado el backend en `http://127.0.0.1:8000` si consumes APIs
 
 ---
 
-## 📂 Estructura del Proyecto
+## 🚀 Levantar el proyecto localmente
 
-El proyecto está organizado de la siguiente manera:
+### 1️⃣ Instalar Dependencias
 
+```bash
+cd front-end-app
+npm install
+npm run dev
 ```
-proyecto-django/
-│── venv/              # Entorno virtual
-│── manage.py          # Comando de administración
-│── cliente/           # Aplicación de gestion de clientes
-│── establecimiento/   # Aplicación de gestion de establecimientos
-│── reserva/           # Aplicación de gestion de reservas
-│── global_project/    # Configuración del proyecto
-│── usuario/           # Aplicacion de gestion de usuarios
+
+## ⚙️ USUARIOS DE ACCESO
+```json
+// ROL DE CLIENTE
+{
+  "username": "eliza",
+  "password": "N7qcajb8"
+}
+
+// ROL DE ADMINISTRADOR
+{
+  "username": "sperezp",
+  "password": "N7qcajb8"
+}
 ```
----
-🚀 ¡Feliz programación con Django! 🦄🔥
+
+
